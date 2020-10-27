@@ -1,29 +1,44 @@
-// export function  caesarCipher(str, key) {
-//   return str.toUpperCase().replace(/[A-Z]/g, c => String.fromCharCode((c.charCodeAt(0)-65 + key ) % 26 + 65));
+function ceasarCipher(str) {
+  // Deciphered reference letters
+  const decoded = {
+    a: 'n',
+    b: 'o',
+    c: 'p',
+    d: 'q',
+    e: 'r',
+    f: 's',
+    g: 't',
+    h: 'u',
+    i: 'v',
+    j: 'w',
+    k: 'x',
+    l: 'y',
+    m: 'z',
+    n: 'a',
+    o: 'b',
+    p: 'c',
+    q: 'd',
+    r: 'e',
+    s: 'f',
+    t: 'g',
+    u: 'h',
+    v: 'i',
+    w: 'j',
+    x: 'k',
+    y: 'l',
+    z: 'm',
+  };
 
-export function ceasarCipher(str){
-  //Deciphered reference letters
-  let decoded = {
-    a: 'n', b: 'o', c: 'p',
-    d: 'q', e: 'r', f: 's',
-    g: 't', h: 'u', i: 'v',
-    j: 'w', k: 'x', l: 'y',
-    m: 'z', n: 'a', o: 'b',
-    p: 'c', q: 'd', r: 'e',
-    s: 'f', t: 'g', u: 'h',
-    v: 'i', w: 'j', x: 'k',
-    y: 'l', z: 'm'    
-  }
-  
-  //convert the string to lowercase
+  // convert the string to lowercase
   str = str.toLowerCase();
-  
-  //decipher the code
+
+  // decipher the code
   let decipher = '';
-  for(let i = 0 ; i < str.length; i++){
+  for (let i = 0; i < str.length; i += 1) {
     decipher += decoded[str[i]];
   }
-  
-  //return the output
+
+  // return the output
   return decipher;
 }
+export default ceasarCipher;
