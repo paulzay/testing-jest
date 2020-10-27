@@ -1,6 +1,6 @@
-import calculator from './calculator';
+import Calculator from './calculator';
 
-const compute = new calculator();
+const compute = new Calculator();
 test('perfom computations', () => {
   expect(compute.add(1, 2)).toBe(3);
   expect(compute.subtract(4, 2)).toBe(2);
