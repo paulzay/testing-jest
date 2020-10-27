@@ -1,7 +1,7 @@
 # Testing practice
 > In this project we are testing following methods with Jest:
 
-- calculator (add, substract, multiply and divide),
+- calculator (add, subtract, multiply and divide),
 - capitalize string (returns capitalized string),
 - reverse string (returns reversed string),
 - array analysis (returns min, max, average of a given array),
@@ -26,7 +26,6 @@ To get a local copy up and running follow these simple example steps.
 - git clone https://github.com/paulzay/testing-jest.git;
 - cd testing-jest/
 - npm install
-
 ```
 ### Usage
 
