@@ -1,8 +1,12 @@
+function calculator(){
+	this.add = function  add(a, b){return a + b};
 
-export const add = (a, b) => a + b;
+	this.subtract = function subtract(a, b){return a - b};
 
-export const subtract = (a, b) => a - b;
+	this.multiply = function multiply(a, b){return a * b};
 
-export const multiply = (a, b) => a * b;
+	this.divide = function divide(a, b){return a / b};
 
-export const divide = (a, b) => a / b;
+}
+
+export default calculator;
